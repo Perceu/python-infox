@@ -1,14 +1,13 @@
-from curses import wrapper
+from datetime import datetime
 
-def main(stdscr):
-    # Clear screen
-    stdscr.clear()
+v1 = 1
+v2 = 1.0
+v3 = 'perceu'
+v4 = True
+v5 = datetime.now()
 
-    stdscr.refresh()
-    key = None
-    while key != 'q':
-        key = stdscr.getkey()
-        stdscr.addstr(0, 0, key.encode('UTF-8'))
-
-
-wrapper(main)
+print(type(v1))
+print(type(v2))
+print(type(v3))
+print(type(v4))
+print(type(v5))
