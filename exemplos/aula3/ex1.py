@@ -1,6 +1,6 @@
 print('='*10+' Minha String '+'='*10)
 #minha string
-minha_string = 'Essa e uma string de exemplo!'
+minha_string = 'PeRcEu bertoletti'
 print(minha_string)
 
 #comando lenght
@@ -9,12 +9,13 @@ print(len(minha_string))
 
 #comando replace
 print('='*10+' Replace '+'='*10)
-print(minha_string.replace('exemplo','bonita'))
+print(minha_string.replace('a','bonita'))
+minha_string = minha_string.replace('a','bonita')
 
 #comando find
 print('='*10+' Find '+'='*10)
-print(minha_string.find('bonita'))
-print(minha_string)
+print(minha_string.find('b'))
+print(minha_string[0:-2:2])
 print(minha_string.find('exemplo'))
 
 #comando find
