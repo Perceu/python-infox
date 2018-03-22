@@ -1,27 +1,32 @@
-import turtle
-import tkinter as tk
 
-def forward():
-    t.forward(100)
+print('vou contar até 5:')
+percorrer_isso = range(5)
 
-def back():
-    t.back(100)
+for item in percorrer_isso:
+    print(item)
 
-def left():
-    t.left(90)
+print('Contei né ?')
 
-def right():
-    t.right(90)
+print('vou fazer uma lista com 10 itens')
 
-root = tk.Tk()
-canvas = tk.Canvas(master = root, width = 500, height = 500)
-canvas.pack()
+percorrer_isso = list(range(0,50,5))
+for item in percorrer_isso:
+    print(item)
 
-t = turtle.RawTurtle(canvas)
 
-tk.Button(master = root, text = "Forward", command = forward).pack(side = tk.LEFT)
-tk.Button(master = root, text = "Back", command = back).pack(side = tk.LEFT)
-tk.Button(master = root, text = "Left", command = left).pack(side = tk.LEFT)
-tk.Button(master = root, text = "Right", command = right).pack(side = tk.LEFT)
+print('vamos percorrer uma string')
 
-root.mainloop()
+nome = 'Perceu'
+print(type(nome),nome, len(nome))
+i=0
+
+while i < 6:
+    print(nome[i])
+    i = i + 1
+print("-"*50)
+
+for c in nome:
+    print(c)
+
+for c in enumerate(nome):
+    print(c)
