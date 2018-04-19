@@ -32,21 +32,64 @@
 
 			<!-- Example of nested vertical slides -->
 			<section>
-				<section>
-					<h2>Sobre o que vamos conversar ?</h2>
+				<h2>Sobre o que vamos conversar ?</h2>
+			</section>
+			<section>
+				<h2>Nessa Aula</h2>
+				<ul>
+					<li>Organizando interna do python</li>
+					<li>Organizando o projeto</li>
+					<li>Zen do python</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Proxima Aula</h2>
+				<ul>
+					<li>Frameworks</li>
+					<li>Flask</li>
+				</ul>
+			</section>
+			<section>
+				<section>	
+					<h1>Organização Interna do python</h1>
 				</section>
-				<section>
-					<h2>Nessa Aula</h2>
-					<ul>
-						<li>Organizando o projeto</li>
-						<li>Zen do python</li>
-					</ul>
+				<section>	
+					<pre>
+						<code class="hljs" data-trim>
+							def soma( num1, num2 ):
+								return "Sua soma deu: {}".format((num1 + num2))
+
+							print(soma(2,4))
+							if __name__=='__main__':
+								print(soma(7,3))
+						</code>
+					</pre>
 				</section>
-				<section>
-					<h2>Proxima Aula</h2>
-					<ul>
-						<li>Criado uma pagina estatica</li>
-					</ul>
+				<section>	
+					<pre>
+						<code class="hljs" data-trim>
+							from ex1 import soma
+								
+							print(soma(20,22))
+						</code>
+					</pre>
+				</section>
+			</section>
+			<section>
+				<section>	
+					<h1>Organização do projeto</h1>
+				</section>
+				<section>	
+					arquivos __init__.py
+				</section>
+				<section>	
+					README.md
+				</section>
+				<section>	
+					Requirements.txt
+				</section>
+				<section>	
+					Enviroments
 				</section>
 			</section>
 
