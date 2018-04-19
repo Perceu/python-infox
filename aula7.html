@@ -29,28 +29,134 @@
 			<section>
 				<h1>Aula 07.</h1>
 			</section>
-
-			<!-- Example of nested vertical slides -->
 			<section>
-				<section>
-					<h2>Sobre o que vamos conversar ?</h2>
-				</section>
-				<section>
-					<h2>Nessa Aula</h2>
-					<ul>
-						<li>Flask um microframework poderoso</li>
-						<li>Criando um hello World</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Proxima Aula</h2>
-					<ul>
-						<li>Organizando o projeto</li>
-						<li>Zen do python</li>
-					</ul>
-				</section>
+				<h2>Sobre o que vamos conversar ?</h2>
 			</section>
 
+			<section>
+				<h2>Nessa Aula</h2>
+				<ul>
+					<li>Funções</li>
+					<li>Classes</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Proxima Aula</h2>
+				<ul>
+					<li>Organizando interna do python</li>
+					<li>Organizando o projeto</li>
+				</ul>
+			</section>
+			<section>
+				<section>
+					<h1>Funções</h1>
+				</section>
+				<section>
+					<h1>def</h1>
+					<pre>
+					<code class="hljs" data-trim>
+					def funcao( parametro1, parametro2, parametro_opcional=null ) :
+						print("corpo da função")
+					</code>
+					</pre>
+				</section>
+				<section>
+					<h1>Exemplo</h1>
+					<pre>
+					<code class="hljs" data-trim>
+					def soma( num1, num2 ):
+						return "Sua soma deu: {}".format((num1 + num2))
+
+					print(soma(2,4))
+					print(soma(7,3))
+					</code>
+					</pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Classes</h1>
+				</section>
+				<section>
+					<h1>class</h1>
+					<pre>
+					<code class="hljs" data-trim>
+					class NomeDaClasse(object): 
+						atributo1 = None 
+						
+						def metodo(self, args): 
+							pass
+					</code>
+					</pre>
+				</section>
+				<section>
+					<h1>Exemplo</h1>
+					<pre>
+					<code class="hljs" data-trim>
+					class Pessoa(object): 
+						Nome = None 
+						Nascimento = None
+						Nacionalidade = None	
+											
+						def andar(self, args): 
+							print (self.nome + ", Está andando ")
+
+						def falar(self, args): 
+							print (self.nome + ", Está falando ")
+
+					</code>
+					</pre>
+				</section>
+				<section>
+					<h1>Metodos especiais</h1>
+					<pre>
+					<code class="hljs" data-trim>
+					class Pessoa(object): 
+						Nome = None 
+						def __init__(self,nome):
+							self.Nome = nome
+
+						def andar(self, args): 
+							print (self.Nome + ", Está andando ")
+
+						def falar(self, args): 
+							print (self.Nome + ", Está falando ")
+
+						def __del__(self): 
+							print (self.Nome + ", Estou morrendo")
+
+					</code>
+					</pre>
+				</section>
+				<section>
+					<h1>Ajudas</h1>
+					<pre>
+					<code class="hljs" data-trim>
+						help()
+						dir()
+					</code>
+					</pre>
+				</section>
+				<section>
+					<h1>Boas Praticas</h1>
+					<pre>
+					<code class="hljs" data-trim>
+					def soma( num1, num2 ): 
+						"""
+						Metodo que soma os valores passados e retorna uma string
+						"""
+					 	return "Sua soma deu: {}".format((num1 + num2))
+					</code>
+					</pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Exercicios</h1>
+					<p>Fazer no minimo 5 exercicios da lista 5 e da lista 8 </p>
+					<a href="https://wiki.python.org.br/ListaDeExercicios">Lista</a>
+				</section>
+			</section>
 			<section>
 				<h1>FIM</h1>
 			</section>
