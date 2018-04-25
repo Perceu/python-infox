@@ -29,22 +29,100 @@
 			<section>
 				<h1>Aula 09.</h1>
 			</section>
-
+			<section>
+				<h2>Sobre o que vamos conversar ?</h2>
+			</section>
+			<section>
+				<h2>Nessa Aula</h2>
+				<ul>
+					<li>Libs</li>
+					<li>Frameworks e Micro frameworks</li>
+					<li>Flask</li>
+				</ul>
+			</section>
 			<!-- Example of nested vertical slides -->
 			<section>
 				<section>
-					<h2>Sobre o que vamos conversar ?</h2>
+					<h2>Libs</h2>
 				</section>
 				<section>
-					<h2>Nessa Aula</h2>
+					<h2>Sqlite 3</h2>
+					<pre>
+						<code class="hljs" data-trim>
+							>>> import sqlite3 
+							>>> conn = sqlite3.connect('example.db') 
+							>>> c = conn.cursor() 
+							>>> c.execute(''' create table alunos (nome varchar(50));''')
+							>>> c.execute(''' insert into alunos values ('perceu Bertoletti'),('Rogerio') ''')
+							>>> c.execute(''' select * from alunos ''')
+							>>> c.fetchone() 
+							('perceu Bertoletti',)
+							>>> c.fetchone() 
+							('Rogerio',)
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h2>Http Server</h2>
+					<pre>
+						<code class="hljs" data-trim>
+							>>> import http.server 
+							>>> import socketserver 
+							>>> PORT = 8080 
+							>>> Handler = http.server.SimpleHTTPRequestHandler 
+							>>> with socketserver.TCPServer(("",PORT),Handler) as httpd: 
+							... print("serving at port",PORT) 
+							... httpd.serve_forever() 
+							...
+						</code>
+					</pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Frameworks e Micro frameworks</h2>
+				</section>
+				<section>
+					<h2>Framework</h2>
 					<ul>
-						<li>Criado uma pagina estatica</li>
+						<li>Inicio do projeto</li>
+						<li>Padrões</li>
+						<li>Bibliotecas e helpers</li>
+						<li>Estruturas e pastas e settings*</li>
+						<li>Assistentes*</li>
+					</ul>
+					*micro frameworks costuman não ter esses recursos
+				</section>
+				<section>
+					<h2>Alguns python</h2>
+					<ul>
+						<li>Django</li>
+						<li>Flask</li>
+						<li>Tornado</li>
 					</ul>
 				</section>
+			</section>
+			<section>
 				<section>
-					<h2>Proxima Aula</h2>
+					<h2>Flask</h2>
+				</section>
+				<section>
+					<h2>Framework</h2>
 					<ul>
-						<li>Django - um framework para perfeccionistas com prazo</li>
+						<li>Inicio do projeto</li>
+						<li>Padrões</li>
+						<li>Bibliotecas e helpers</li>
+						<li>Estruturas e pastas e settings*</li>
+						<li>Assistentes*</li>
+					</ul>
+					*micro frameworks costuman não ter esses recursos
+				</section>
+				<section>
+					<h2>Alguns python</h2>
+					<ul>
+						<li>Django</li>
+						<li>Flask</li>
+						<li>Tornado</li>
 					</ul>
 				</section>
 			</section>
